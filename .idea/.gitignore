@@ -1,0 +1,17 @@
+build/
+
+!**/src/main/**
+!**/src/test/**
+
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### Allure ###
+.allure
+
+### Gradle ###
+.gradle
