@@ -12,11 +12,13 @@ public class TestBoxTests {
     @BeforeAll
     static void beforeAll() {
         Configuration.pageLoadStrategy="eager";
+        Configuration.browserSize="1920x1080";
+        Configuration.baseUrl="https://demoqa.com";
     }
 
     @Test
     void fillFormTest() {
-        open("https://demoqa.com/text-box");
+        open("/text-box");
         Selenide.executeJavaScript("$('#fixedban').remove()");
         Selenide.executeJavaScript("$('footer').remove()");
 
